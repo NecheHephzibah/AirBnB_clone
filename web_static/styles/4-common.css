@@ -7,3 +7,10 @@ body{
     background-image: url('../images/AirBnB_icon.png');
     background-repeat: no-repeat;
 }
+
+.container{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+

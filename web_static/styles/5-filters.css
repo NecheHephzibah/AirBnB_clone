@@ -1,0 +1,54 @@
+.filters{
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    margin-right: 30px;
+    /* padding-left: 40px; */
+    transition: opacity 0.3s ease;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.locations,
+.amenities {
+    width: 25%;
+    height: 100%;
+}
+
+.locations {
+    padding-left: 30px;
+    border-right: 1px solid #DDDDDD;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.amenities{
+    padding-right: 170px;
+}
