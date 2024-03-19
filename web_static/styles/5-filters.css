@@ -1,14 +1,13 @@
 .filters{
+    position: relative;
     width: 100%;
     background-color: white;
     height: 70px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
+/* Styling for button */
 button{
     border: none;
     cursor: pointer;
@@ -18,19 +17,22 @@ button{
     height: 48px;
     width: 20%;
     border-radius: 4px;
-    margin-right: 30px;
-    /* padding-left: 40px; */
-    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 button:hover{
     opacity: 0.9;
 }
 
+/* Styling for location and amenity classes */
 .locations,
 .amenities {
     width: 25%;
     height: 100%;
+    display: inline-block;
 }
 
 .locations {
@@ -41,14 +43,18 @@ button:hover{
 .locations h3,
 .amenities h3 {
     font-weight: 600;
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
 
 .locations h4,
 .amenities h4 {
     font-weight: 400;
     font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 
 .amenities{
-    padding-right: 170px;
+    padding-left: 30px;
 }

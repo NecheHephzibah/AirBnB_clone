@@ -1,12 +1,12 @@
+/* Styling for articles tag */
 .places {
     margin-top: 20px;
-    justify-content: space-between;
-    align-items: center; 
+    text-align: center;
 }
 
 .places h1 {
     font-size: 30px;
-    margin: 0;
+    text-align: left;
 }
 
 .places article {
@@ -14,17 +14,8 @@
     width: 390px;
     padding: 20px;
     margin: 20px;
-    border: 3px solid #FF5A5F;
-    border-bottom: 2px solid #FF5A5F;
-    border-left: 1px solid #FF5A5F;
-    border-right: 1px solid #FF5A5F;
+    border: 1px solid #FF5A5F;
     border-radius: 4px;
-}
-
-.last_article{
-    display: block;
-    justify-content: center;
-    align-items: center;
 }
 
 .places h2 {

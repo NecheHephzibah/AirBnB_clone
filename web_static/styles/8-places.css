@@ -1,34 +1,60 @@
+/* Styling for article tag */
 .places {
-    margin-top: 20px;
-    display: flex;
+    /* margin-top: 20px; */
+    text-align: center;
     position: relative;
-
+    display: table;
+    border-spacing: 20px;   
 }
 
 .places h1 {
     font-size: 30px;
-    margin: 0;
+    text-align: left;
 }
 
 .places article {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;  */
+    /* flex-direction: column; */
+    position: relative;
+    display: inline-block;
     width: 390px;
     padding: 20px;
     margin: 20px;
+    /* margin-bottom: 20px; */
     border: 1px solid #FF5A5F;
     border-radius: 4px;
-    position: relative;
     font-size: 14px;
+
+    /* display: table-cell; */
+    
+    /* vertical-align: top;  */
+}
+
+.places article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid transparent; 
+    z-index: -1;
 }
 
 article > h2{
     text-align: center;
 }
 
+.places h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Styling for the price tag */
 .price_by_night {
     position: absolute;
-    
+   
     min-width: 60px;
     height: 60px;
     padding: 5px;
@@ -37,22 +63,14 @@ article > h2{
     border: 4px solid #FF5A5F;
     border-radius: 50px;
     display: flex;
-    right: 0;
-    margin-right: 30px;
-    align-items: center;
-}
-
-.last_article{
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-.places h2 {
-    font-size: 30px;
+    right: 10%;
+    /* margin-right: 30px; */
     text-align: center;
+    top: 4%;
+    align-items: center;
 }
 
+/* Styling for information class */
 .max_guest{
     width: 100px;
     background-image: url('../images/Hbnb_icon_group.png');
@@ -103,11 +121,12 @@ article > h2{
     align-items: center;
 }
 
-.user {
+/* Styling for user and descrition classes */
+.user, 
+.description{
     margin-top: 10px;
+    text-align: left;
 }
 
-.description {
-    margin-top: 10px;
-}
+
 

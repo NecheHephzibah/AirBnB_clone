@@ -1,14 +1,13 @@
 .filters{
+    position: relative;
     width: 100%;
     background-color: white;
-    height: 100%;
+    height: 70px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
+/* Styling for button */
 button{
     border: none;
     cursor: pointer;
@@ -18,25 +17,21 @@ button{
     height: 48px;
     width: 20%;
     border-radius: 4px;
-    margin-right: 30px;
-    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
-
-/* .button-search{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-
-} */
 
 button:hover{
     opacity: 0.9;
 }
-
+/* Styling for location and amenity classes */
 .locations,
 .amenities {
     width: 25%;
     height: 100%;
+    display: inline-block;
     position: relative;
 }
 
@@ -45,9 +40,10 @@ button:hover{
     display: block;
 }
 
+/* Styling for drop down menu */
 .popover{
     position: absolute;
-    top: 86%;
+    top: 83%;
     left: 0;
     display: none;
     background-color: #FAFAFA;
@@ -56,6 +52,12 @@ button:hover{
     list-style-type: none;
     width: calc(100% - 20px);
 }
+/* .popover::before{
+    content: '';
+    background-color: #e61111;
+
+    z-index: 1000;
+} */
 
 .popover li {
     padding: 5px 0;
@@ -71,14 +73,18 @@ button:hover{
 .locations h3,
 .amenities h3 {
     font-weight: 600;
+    box-sizing: border-box;
+    margin-bottom: 0;
 }
 
 .locations h4,
 .amenities h4 {
     font-weight: 400;
     font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 
 .amenities{
-    padding-right: 170px;
+    padding-left: 30px;
 }
