@@ -2,6 +2,7 @@
 .places {
     margin-top: 20px;
     text-align: center;
+    z-index: -1;
 }
 
 .places h1 {
