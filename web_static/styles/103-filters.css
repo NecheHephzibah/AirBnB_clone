@@ -53,6 +53,7 @@ button:hover{
     padding: 10px;
     list-style-type: none;
     width: calc(100% - 20px);
+    z-index: 1;
 }
 
 .popover li {
